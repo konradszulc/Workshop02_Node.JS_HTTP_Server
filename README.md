@@ -154,13 +154,13 @@ Complete the following tasks in order:
 ## Testing Your Implementation
 
 ### Manual Testing Checklist
-- [ ] Server starts without errors
-- [ ] Home page loads at `http://localhost:3000`
-- [ ] About page loads at `/about`
-- [ ] Contact page loads at `/contact`
-- [ ] CSS styles are applied correctly
-- [ ] Custom 404 page appears for invalid URLs
-- [ ] (Bonus) `/api/time` returns JSON with current time
+- [X] Server starts without errors
+- [X] Home page loads at `http://localhost:3000`
+- [X] About page loads at `/about`
+- [X] Contact page loads at `/contact`
+- [X] CSS styles are applied correctly
+- [X] Custom 404 page appears for invalid URLs
+- [X] (Bonus) `/api/time` returns JSON with current time
 
 ---
 
