@@ -96,6 +96,7 @@ const server = http.createServer((req, res) => {
         const contentType = MIME_TYPES[extname] || 'text/html';
 
         // Step 3: Read the file
+        //fs.readFile is async, and tries to read the file, if it doesnt exist it shows error instead of successful html page
         fs.readFile(filePath, (err, content) => {
             if (err) {
                 if (err.code === 'ENOENT') {

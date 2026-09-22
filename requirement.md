@@ -41,14 +41,14 @@ The URL paths for all HTML files inside public folder should be mapped so users 
 (note - either error page or direct to home should be selected when unknown url used, elaborated in further tasks)
 ---
 
-### Task 3 – <Task Title>
+### Task 3 – <Task Serve HTML files>
 **Description**  
-Explain clearly what the student must do.
+To find, locate, determine and read file types utilize fs.readFile and conditionals to showcase correct pages or errors with http responses.
 
 **Requirements**
-- 
-- 
-- 
+- Files read using fs.readFile()
+- Error handling if no file present or server error 
+- if sucessful, response is sent with code 200, with required content type and sends file content
 
 ---
 
