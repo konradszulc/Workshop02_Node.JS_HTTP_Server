@@ -52,14 +52,14 @@ To find, locate, determine and read file types utilize fs.readFile and condition
 
 ---
 
-### Task 4 – <Task Title>
+### Task 4 – <Task Serve CSS files and Security Check>
 **Description**  
-Explain clearly what the student must do.
+Make sure requests that are for CSS files in /styles/ folder are permitted. As well, check path is within public folder only, anything trying access out of public folder given error, so URL's must be follow chosen structure or else gives error
 
 **Requirements**
-- 
-- 
-- 
+- Server checks and handles requests for CSS files in styles folder
+- Showcases error if traversal attack
+- showcases error if invalid url not in public folder directory
 
 ---
 
@@ -74,21 +74,21 @@ Explain clearly what the student must do.
 
 ---
 
-## Validation / Acceptance Criteria
-Your solution will be considered complete if:
-- The application runs without errors
-- All mandatory tasks are implemented
-- Code is readable and well-structured
-- No unnecessary files are committed
-
----
-
 ## Optional Tasks (Bonus)
 These tasks are **optional** and not required for completion.
 
 - 
 - 
 - 
+
+---
+
+## Validation / Acceptance Criteria
+Your solution will be considered complete if:
+- The application runs without errors
+- All mandatory tasks are implemented
+- Code is readable and well-structured
+- No unnecessary files are committed
 
 ---
 

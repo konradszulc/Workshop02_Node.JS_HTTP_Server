@@ -64,18 +64,17 @@ const server = http.createServer((req, res) => {
         // Handle requests for CSS files from /styles/ folder
         // Uncomment and complete the security check:
         
-        /*
         else if (req.url.startsWith('/styles/')) {
             filePath = path.join(PUBLIC_DIR, req.url);
-            
-            // Security: Prevent path traversal attacks (../ in URL)
+            //Needed security to prevent path traversal attacks (..// in URL)
             const normalizedPath = path.normalize(filePath);
+            //Check if the normalized path starts with PUBLIC_DIR to ensure it's within the public folder
             if (!normalizedPath.startsWith(PUBLIC_DIR)) {
                 handle404(res);
                 return;
             }
         }
-        */
+
         else {
             // No route matched -> 404
             handle404(res);
