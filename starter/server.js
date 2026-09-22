@@ -49,11 +49,14 @@ const server = http.createServer((req, res) => {
             filePath = path.join(PUBLIC_DIR, 'index.html');
         } 
         // TODO: Add 'else if' for '/about' -> 'about.html'
-        // Example: else if (req.url === '/about') { filePath = path.join(PUBLIC_DIR, 'about.html'); }
-        
-        
+        //filepath is set to about.html and contact.html if the user navigates to /about or /contact
+        else if (req.url === '/about') {
+            filePath = path.join(PUBLIC_DIR, 'about.html');
+        }
         // TODO: Add 'else if' for '/contact' -> 'contact.html'
-        
+        else if (req.url ==='/contact') {
+            filePath = path.join(PUBLIC_DIR, 'contact.html');
+        }
         
         // ========================================
         // TODO: Task 4 - Serve CSS Files

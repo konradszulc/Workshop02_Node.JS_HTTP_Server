@@ -19,7 +19,7 @@ Optional tasks are provided for additional practice.
 
 ## Mandatory Tasks
 
-### Task 1 – <Task Title>
+### Task 1 – <Task Starting the Server>
 **Description**  
 With the Port decided to be on 3000 and server already created with http module. I was tasked with creating a server.listen on the same port, and to log a message when the server starts within the server.js file inside starter folder. Additionally, I add optional route logs for a better user experience which included the index.html, about.html, and contact.html
 
@@ -30,15 +30,15 @@ With the Port decided to be on 3000 and server already created with http module.
 
 ---
 
-### Task 2 – <Task Title>
+### Task 2 – <Task Adding Routing>
 **Description**  
-Explain clearly what the student must do.
+The URL paths for all HTML files inside public folder should be mapped so users should be able to access them depending on the url. The filePath variable alongside if and else conditions to display the correct page depending on the path and conditions met
 
 **Requirements**
-- 
-- 
-- 
-
+- Using / should go to index.html
+- Using /about should go to about.html
+- Using /contact should go to contact.html
+(note - either error page or direct to home should be selected when unknown url used, elaborated in further tasks)
 ---
 
 ### Task 3 – <Task Title>
