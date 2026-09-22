@@ -21,12 +21,12 @@ Optional tasks are provided for additional practice.
 
 ### Task 1 – <Task Title>
 **Description**  
-Explain clearly what the student must do.
+With the Port decided to be on 3000 and server already created with http module. I was tasked with creating a server.listen on the same port, and to log a message when the server starts within the server.js file inside starter folder. Additionally, I add optional route logs for a better user experience which included the index.html, about.html, and contact.html
 
 **Requirements**
-- 
-- 
-- 
+- Create server.listen() on port 300
+- Used console.log to log a welcome message when the server starts
+- Show available routes as a bonus through console.log when server starts
 
 ---
 
