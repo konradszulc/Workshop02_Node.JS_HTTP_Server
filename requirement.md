@@ -77,9 +77,13 @@ Create two functions to handle different error events one for 404 and the other 
 ## Optional Tasks (Bonus)
 These tasks are **optional** and not required for completion.
 ### Task 6 – <Task API Endpoint>
-- 
-- 
-- 
+**Description**  
+Created API endpoint that returns current date/time as JSON
+
+**Requirements**
+- Use requests and Get method to use /api/time endpoint
+- Current time and date converted to ISO string
+- convert data to JSON and send HTTP Response 
 
 ---
 
@@ -94,11 +98,11 @@ Your solution will be considered complete if:
 
 ## Submission Checklist
 Before submitting, make sure that:
-- [ ] All mandatory tasks are completed
-- [ ] Application starts successfully
-- [ ] Code is pushed to GitHub
-- [ ] Repository does not contain `node_modules`
-- [ ] README instructions were followed
+- [X] All mandatory tasks are completed
+- [X] Application starts successfully
+- [X] Code is pushed to GitHub
+- [X] Repository does not contain `node_modules`
+- [X] README instructions were followed
 
 ---
 
