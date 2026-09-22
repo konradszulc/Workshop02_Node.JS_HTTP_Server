@@ -136,8 +136,7 @@ function handle404(res) {
     // If successful: Send 404 status with the HTML content
     // If failed: Send 404 status with plain text "404 - Page Not Found"
     
-    // Example structure:
-    /*
+
     fs.readFile(notFoundPath, (err, content) => {
         if (err) {
             res.writeHead(404, { 'Content-Type': 'text/plain' });
@@ -147,14 +146,14 @@ function handle404(res) {
             res.end(content, 'utf-8');
         }
     });
-    */
+
 }
 
 // Function to handle 500 errors (Server Error)
 function handleServerError(res, error) {
     // Step 1: Log the error to the console
     // TODO: Use console.error() to log the error
-    
+    console.error("Server Error Occured:", error)
     
     // Step 2: Create the path to 500.html
     const serverErrorPath = path.join(PUBLIC_DIR, '500.html');
@@ -163,6 +162,16 @@ function handleServerError(res, error) {
     // TODO: Similar to handle404, read serverErrorPath and serve it
     // If successful: Send 500 status with the HTML content
     // If failed: Send 500 status with plain text "500 - Internal Server Error"
+    //will utilize the 500.html file instead
+    fs.readFile(serverErrorPath, (err, content)=>{
+        if (err) {
+            res.writeHead(500, {"Content-Type": "text/plain"});
+            res.end("500- Internal Server Error");
+        } else {
+            res.writeHead(500, {"Content-Type": "text/html"});
+            res.end(content, "utf-8");
+        }
+    });
     
 }
 

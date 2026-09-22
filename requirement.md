@@ -63,20 +63,20 @@ Make sure requests that are for CSS files in /styles/ folder are permitted. As w
 
 ---
 
-### Task 5 – <Task Title>
+### Task 5 – <Task Error Handling>
 **Description**  
-Explain clearly what the student must do.
+Create two functions to handle different error events one for 404 and the other for 500, utilize the HTML pages to display these errors
 
 **Requirements**
-- 
-- 
-- 
+- Function handle404 is created to show 404 HTML when requested page is not found
+- Function handleServerError is created to show 500 HTML when server has an error
+- if HTML pages are missing, will show plain text instead of custom page
 
 ---
 
 ## Optional Tasks (Bonus)
 These tasks are **optional** and not required for completion.
-
+### Task 6 – <Task API Endpoint>
 - 
 - 
 - 
